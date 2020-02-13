@@ -48,13 +48,17 @@ export class ContainerExt{
 export function LazyInject(name?: string) {
     return function(target: Object, propertyName: string){
         let typeOrName = name || Reflect.getMetadata('design:type', target, propertyName)
-
-        ContainerExt.registerLazyHandler(typeOrName, (value)=>{
-            if(!value){
-                throw new Error("[LazyInject] value is null!")
-            }
+        let value = ContainerExt.get(typeOrName)
+        if(value){
             target[propertyName] = value
-        })
+        }else{
+            ContainerExt.registerLazyHandler(typeOrName, (value)=>{
+                if(!value){
+                    throw new Error("[LazyInject] value is null!")
+                }
+                target[propertyName] = value
+            })
+        }
     }
 }
 
