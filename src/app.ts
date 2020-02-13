@@ -1,20 +1,21 @@
-import { ContainerExt } from './ext/typedi.ext';
-import { DIContainerBootstrapInitializer } from './initializer/DIContainerBootstrapInitializer';
+require('module-alias/register')
+
 import * as bodyParser from 'body-parser';
 import * as cookieParser from 'cookie-parser';
 import * as express from 'express';
 import * as morgan from 'morgan';
+import * as path from 'path';
+import "reflect-metadata";
+import { ContainerExt } from './ext/typedi.ext';
 import { BootstrapAppCreator } from './initializer/BootstrapAppCreator';
 import { DatabaseBootstrapInitializer } from './initializer/DatabaseBootstrapInitializer';
+import { DIContainerBootstrapInitializer } from './initializer/DIContainerBootstrapInitializer';
 import { GraphqlBootStrapInitializer } from './initializer/GraphqlBootStrapInitializer';
 import { RoutingControllerBootstrapInitializer } from './initializer/RoutingControllerBootstrapInitializer';
 import router from './routes/index';
-import * as path from 'path';
-import "reflect-metadata";
-
 import { readFinallyAppConfig } from './util/appUtil';
 
-import 'module-alias/register';
+
 
 // let app = express();
 export const PROJECT_ROOT_PATH = __dirname
@@ -90,7 +91,7 @@ let bootstrap = async () => {
 
   // 检查是否存在依赖没有注入成功
   ContainerExt.finally()
-  
+
 }
 
 console.log("process.env.NODE_ENV: ", process.env.NODE_ENV)
