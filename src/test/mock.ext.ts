@@ -1,0 +1,1 @@
+export let _mockInstance = <T>()=>{ return {} as T}

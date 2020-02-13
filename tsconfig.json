@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "./build",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+
+    "baseUrl": "./src",
+    "moduleResolution": "node",
+    "paths": {
+      "@/*": ["./*"],
+      "@bll/*": ["bll/*"],
+      "@db/*": ["dal/db/*"],
+      "@entity/*": ["dal/db/entity/*"],
+      "@repository/*": ["dal/db/repository/*"],
+      "@ut/*": ["test/*"]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "src/**/*"
+  ]
+  
+}
