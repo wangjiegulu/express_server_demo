@@ -7,15 +7,16 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
 
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "moduleResolution": "node",
     "paths": {
-      "@/*": ["./*"],
-      "@bll/*": ["bll/*"],
-      "@db/*": ["dal/db/*"],
-      "@entity/*": ["dal/db/entity/*"],
-      "@repository/*": ["dal/db/repository/*"],
-      "@ut/*": ["test/*"]
+      "@root/*": ["./*"],
+      "@src/*": ["src/*"],
+      "@util/*": ["src/util/*"],
+      "@bll/*": ["src/bll/*"],
+      "@dal/*": ["src/dal/*"],
+      "@ext/*": ["src/ext/*"],
+      "@ut/*": ["src/test/*"]
     }
   },
   "exclude": [

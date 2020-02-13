@@ -14,6 +14,8 @@ import "reflect-metadata";
 
 import { readFinallyAppConfig } from './util/appUtil';
 
+import 'module-alias/register';
+
 // let app = express();
 export const PROJECT_ROOT_PATH = __dirname
 let bootstrap = async () => {

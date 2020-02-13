@@ -3,8 +3,8 @@ module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',
 
-  rootDir: '.',
-  roots: ['<rootDir>/'], // 多个测试目录
+  rootDir: './',
+  roots: ['<rootDir>/src/'], // 多个测试目录
   testRegex: '(/test/.*\\.(test|spec))\\.[tj]sx?$',
   moduleFileExtensions: [
     "ts",
@@ -12,14 +12,15 @@ module.exports = {
     "js",
     "jsx"
   ],
-  // moduleNameMapper: {
-  //   '^@/(.*)$': '<rootDir>',
-  //   '^@bll/(.*)$': '<rootDir>/src/bll',
-  //   '^@db/(.*)$': '<rootDir>/src/dal/db',
-  //   '^@entity/(.*)$': '<rootDir>/src/dal/db/entity',
-  //   '^@repository/(.*)$': '<rootDir>/src/dal/db/repository',
-  //   '^@ut/(.*)$': '<rootDir>/src/test',
-  // },
+  moduleNameMapper: {
+    '^@root(.*)$': '<rootDir>$1',
+    '^@src(.*)$': '<rootDir>/src$1',
+    '^@util(.*)$': '<rootDir>/src/util$1',
+    '^@bll(.*)$': '<rootDir>/src/bll$1',
+    '^@dal(.*)$': '<rootDir>/src/dal$1',
+    '^@ext(.*)$': '<rootDir>/src/ext$1',
+    '^@ut(.*)$': '<rootDir>/src/test$1',
+  },
   collectCoverage: false,
   collectCoverageFrom: [
     "**/src/**/*.ts",
