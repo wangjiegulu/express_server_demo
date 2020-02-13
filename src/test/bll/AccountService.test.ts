@@ -120,7 +120,6 @@ describe("loginByWechatMiniApp", ()=>{
         mockRpGet.mockClear()
         mockFindOne.mockClear()
         mockSave.mockClear()
-        require('typeorm')
     })
 
     test("login success (user not exist)", async ()=>{

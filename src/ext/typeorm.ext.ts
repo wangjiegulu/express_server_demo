@@ -1,5 +1,5 @@
 /**
- * Typedi 保证可测试性
+ * Typeorm 保证可测试性
  */
 import { Transaction, TransactionManager } from 'typeorm';
 import { isTestEnv } from '../util/appUtil';
