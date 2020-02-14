@@ -1,5 +1,5 @@
 import { Inject } from 'typedi';
-import { isTestEnv } from '../util/appUtil';
+import { isTestEnv } from '@util/appUtil';
 export class ContainerExt{
     static valueMapper = {}
     static callbackMapper = {}

@@ -1,7 +1,7 @@
-import AuthService from '@bll/AuthService';
-import { AuthStatus } from '@dal/db/entity/account';
 import { Action } from 'routing-controllers';
 import { Container } from 'typedi';
+import { AuthStatus } from '@dal/db/entity/account';
+import AuthService from '@bll/AuthService';
 
 /**
  * 权限校验器

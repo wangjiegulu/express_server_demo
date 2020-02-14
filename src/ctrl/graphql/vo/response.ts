@@ -1,5 +1,5 @@
 import { Field, ObjectType } from "type-graphql";
-import { User, UserLogin } from "../../dal/db/entity/account";
+import { User, UserLogin } from "@dal/db/entity/account";
 
 @ObjectType()
 export class GQLLoginResp{

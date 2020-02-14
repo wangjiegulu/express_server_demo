@@ -10,14 +10,16 @@
     "baseUrl": ".",
     "moduleResolution": "node",
     "paths": {
-      "@root/*": ["./*"],
-      "@src/*": ["src/*"],
+      "@boot/*": ["src/boot/*"],
+      "@ctrl/*": ["src/ctrl/*"],
       "@util/*": ["src/util/*"],
       "@err/*": ["src/err/*"],
-      "@bll/*": ["src/bll/*"],
-      "@dal/*": ["src/dal/*"],
+      "@bll/*": ["src/provider/bll/*"],
+      "@dal/*": ["src/provider/dal/*"],
       "@ext/*": ["src/ext/*"],
-      "@ut/*": ["src/test/*"]
+      "@test/*": ["src/test/*"],
+      "@src/*": ["src/*"],
+      "@root/*": ["./*"]
     }
   },
   "exclude": [

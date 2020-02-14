@@ -1,8 +1,8 @@
 import * as express from 'express';
 let router = express.Router()
-import { success, fail } from '../../util/resUtil';
+import { success, fail } from '@util/resUtil';
 import { Container } from 'typedi';
-import AccountService from '../../bll/AccountService';
+import AccountService from '@bll/AccountService';
 
 let accountService = Container.get(AccountService)
 

@@ -1,4 +1,4 @@
-import { generateToken, generateNumberId } from './../util/textUtil';
+import { generateToken, generateNumberId } from '@util/textUtil';
 
 test('[generateNumberId()]generate number id', ()=>{
     let value = generateNumberId()

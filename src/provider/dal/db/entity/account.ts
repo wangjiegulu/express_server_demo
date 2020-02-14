@@ -1,8 +1,8 @@
 import { IsEmail, IsIn, IsJSON, IsMobilePhone, IsUrl } from 'class-validator';
 import { Field, ID, ObjectType } from 'type-graphql';
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
-import { enumValues } from '../../../util/typeUtil';
-import { BaseEntity } from './../base';
+import { enumValues } from '@util/typeUtil';
+import { BaseEntity } from '@dal/db/base';
 
 /**
  * 用户权限

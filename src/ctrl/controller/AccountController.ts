@@ -1,10 +1,10 @@
-import { AuthStatus, User } from './../dal/db/entity/account';
+import { AuthStatus, User } from '@dal/db/entity/account';
 import { Controller, Get, Param, Authorized, CurrentUser } from 'routing-controllers';
 // import { accountService } from '../bll';
-import { ServerError } from '../err/exception';
-import { successJson } from '../util/resUtil';
-import AccountService from '../bll/AccountService';
-import { Inject, Container } from 'typedi';
+import { ServerError } from '@err/exception';
+import { successJson } from '@util/resUtil';
+import AccountService from '@bll/AccountService';
+import { Inject } from 'typedi';
 
 /**
  * https://github.com/typestack/routing-controllers

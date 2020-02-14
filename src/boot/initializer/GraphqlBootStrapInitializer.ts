@@ -2,9 +2,9 @@ import { PROJECT_ROOT_PATH } from '@src/app';
 import * as graphqlHTTP from 'express-graphql';
 import { buildSchema } from 'type-graphql';
 import Container from 'typedi';
-import { graphqlErrorHandler } from '../config/GraphqlErrorHandler';
+import { graphqlErrorHandler } from '@boot/config/GraphqlErrorHandler';
 import { IBootstrapInitializer } from './bootstrap.init';
-import { graphqlAuthChecker } from '../config/GraphQLAuthorizationChecker';
+import { graphqlAuthChecker } from '@boot/config/GraphQLAuthorizationChecker';
 
 export class GraphqlBootStrapInitializer implements IBootstrapInitializer{
   useContainer

@@ -1,9 +1,9 @@
-import { AuthStatus } from './../../dal/db/entity/account';
+import { AuthStatus } from '@dal/db/entity/account';
 import { Arg, Mutation, Query, Resolver, Authorized } from "type-graphql";
-import AccountService from '../../bll/AccountService';
-import { User } from '../../dal/db/entity/account';
-import { GQLLoginReq } from '../type/request';
-import { GQLLoginResp } from '../type/response';
+import AccountService from '@bll/AccountService';
+import { User } from '@dal/db/entity/account';
+import { GQLLoginReq } from '../vo/request';
+import { GQLLoginResp } from '../vo/response';
 import { Inject } from "typedi";
 
 /**

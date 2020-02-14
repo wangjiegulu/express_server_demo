@@ -2,7 +2,7 @@ import {
     EntityRepository, Repository, getRepository 
 } from "typeorm";
 
-import { User, UserWechat, UserLogin } from "../entity/account";
+import { User, UserWechat, UserLogin } from "@dal/db/entity/account";
 
 @EntityRepository(User)
 export class UserRepository extends Repository<User> {

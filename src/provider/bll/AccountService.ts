@@ -2,12 +2,12 @@ import * as moment from 'moment';
 import { RequestPromiseAPI } from 'request-promise';
 import { Service } from 'typedi';
 import { EntityManager } from 'typeorm';
-import { Platform, User, UserLogin, UserWechat, WechatType } from '../dal/db/entity/account';
-import { ServerError } from '../err/exception';
-import { InjectConfig, LazyInject } from '../ext/typedi.ext';
-import { XTransaction, XTransactionManager } from '../ext/typeorm.ext';
-import { generateNumberId, generateToken } from '../util/textUtil';
-import { decryptData } from '../util/wxUtil';
+import { Platform, User, UserLogin, UserWechat, WechatType } from '@dal/db/entity/account';
+import { ServerError } from '@err/exception';
+import { InjectConfig, LazyInject } from '@ext/typedi.ext';
+import { XTransaction, XTransactionManager } from '@ext/typeorm.ext';
+import { generateNumberId, generateToken } from '@util/textUtil';
+import { decryptData } from '@util/wxUtil';
 
 @Service()
 export default class AccountService {

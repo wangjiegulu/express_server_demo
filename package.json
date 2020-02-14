@@ -12,14 +12,16 @@
     "start:prod": "NODE_ENV=prod ts-node ./src/app.ts"
   },
   "_moduleAliases": {
-    "@root": ".",
-    "@src": "src",
+    "@boot": "src/boot",
+    "@ctrl": "src/ctrl",
     "@util": "src/util",
     "@err": "src/err",
-    "@bll": "src/bll",
-    "@dal": "src/dal",
+    "@bll": "src/provider/bll",
+    "@dal": "src/provider/dal",
     "@ext": "src/ext",
-    "@ut": "src/test"
+    "@ut": "src/test",
+    "@src": "src",
+    "@root": "."
   },
   "dependencies": {
     "@types/body-parser": "^1.17.1",

@@ -6,18 +6,15 @@ import * as express from 'express';
 import * as morgan from 'morgan';
 import * as path from 'path';
 import "reflect-metadata";
-import { ContainerExt } from './ext/typedi.ext';
-import { BootstrapAppCreator } from './initializer/BootstrapAppCreator';
-import { DatabaseBootstrapInitializer } from './initializer/DatabaseBootstrapInitializer';
-import { DIContainerBootstrapInitializer } from './initializer/DIContainerBootstrapInitializer';
-import { GraphqlBootStrapInitializer } from './initializer/GraphqlBootStrapInitializer';
-import { RoutingControllerBootstrapInitializer } from './initializer/RoutingControllerBootstrapInitializer';
-import router from './routes/index';
-import { readFinallyAppConfig } from './util/appUtil';
+import { ContainerExt } from '@ext/typedi.ext';
+import { BootstrapAppCreator } from '@boot/initializer/BootstrapAppCreator';
+import { DatabaseBootstrapInitializer } from '@boot/initializer/DatabaseBootstrapInitializer';
+import { DIContainerBootstrapInitializer } from '@boot/initializer/DIContainerBootstrapInitializer';
+import { GraphqlBootStrapInitializer } from '@boot/initializer/GraphqlBootStrapInitializer';
+import { RoutingControllerBootstrapInitializer } from '@boot/initializer/RoutingControllerBootstrapInitializer';
+import router from '@ctrl/routes/index';
+import { readFinallyAppConfig } from '@util/appUtil';
 
-
-
-// let app = express();
 export const PROJECT_ROOT_PATH = __dirname
 let bootstrap = async () => {
 

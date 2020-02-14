@@ -13,14 +13,16 @@ module.exports = {
     "jsx"
   ],
   moduleNameMapper: {
-    '^@root(.*)$': '<rootDir>$1',
-    '^@src(.*)$': '<rootDir>/src$1',
+    '^@boot(.*)$': '<rootDir>/src/boot$1',
+    '^@ctrl(.*)$': '<rootDir>/src/ctrl$1',
     '^@util(.*)$': '<rootDir>/src/util$1',
     '^@err(.*)$': '<rootDir>/src/err$1',
-    '^@bll(.*)$': '<rootDir>/src/bll$1',
-    '^@dal(.*)$': '<rootDir>/src/dal$1',
+    '^@bll(.*)$': '<rootDir>/src/provider/bll$1',
+    '^@dal(.*)$': '<rootDir>/src/provider/dal$1',
     '^@ext(.*)$': '<rootDir>/src/ext$1',
-    '^@ut(.*)$': '<rootDir>/src/test$1',
+    '^@test(.*)$': '<rootDir>/src/test$1',
+    '^@src(.*)$': '<rootDir>/src$1',
+    '^@root(.*)$': '<rootDir>$1'
   },
   collectCoverage: false,
   collectCoverageFrom: [

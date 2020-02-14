@@ -1,4 +1,4 @@
-import { ServerError, ServerException } from "../err/exception"
+import { ServerError, ServerException } from "@err/exception"
 
 /**
  * GraphQL 异常处理
