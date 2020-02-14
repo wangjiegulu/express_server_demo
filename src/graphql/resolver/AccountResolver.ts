@@ -1,4 +1,5 @@
-import { Arg, Mutation, Query, Resolver } from "type-graphql";
+import { AuthStatus } from './../../dal/db/entity/account';
+import { Arg, Mutation, Query, Resolver, Authorized } from "type-graphql";
 import AccountService from '../../bll/AccountService';
 import { User } from '../../dal/db/entity/account';
 import { GQLLoginReq } from '../type/request';
@@ -38,6 +39,7 @@ export class AccountResolver{
     /**
      * 查询用户
      */
+    @Authorized(AuthStatus.ADMIN)
     @Query(returns => User)
     async findUser(@Arg("userId", { nullable: false }) userId: number){
         return await this.accountService.findUserById(userId)

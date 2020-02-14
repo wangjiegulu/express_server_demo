@@ -15,6 +15,7 @@
     "@root": ".",
     "@src": "src",
     "@util": "src/util",
+    "@err": "src/err",
     "@bll": "src/bll",
     "@dal": "src/dal",
     "@ext": "src/ext",

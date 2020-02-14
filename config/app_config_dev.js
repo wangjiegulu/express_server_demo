@@ -16,7 +16,7 @@ module.exports = {
     },
 
     server: {
-        port: 8733
+        port: 8731
     }
     
 }

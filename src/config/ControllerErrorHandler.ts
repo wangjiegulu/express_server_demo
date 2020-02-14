@@ -1,5 +1,5 @@
 import {Middleware, ExpressErrorMiddlewareInterface} from "routing-controllers";
-import { ServerException, ServerError } from "../exception/exception";
+import { ServerException, ServerError } from "../err/exception";
 
 /**
  * Controller 异常处理

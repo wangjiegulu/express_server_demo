@@ -16,6 +16,7 @@ module.exports = {
     '^@root(.*)$': '<rootDir>$1',
     '^@src(.*)$': '<rootDir>/src$1',
     '^@util(.*)$': '<rootDir>/src/util$1',
+    '^@err(.*)$': '<rootDir>/src/err$1',
     '^@bll(.*)$': '<rootDir>/src/bll$1',
     '^@dal(.*)$': '<rootDir>/src/dal$1',
     '^@ext(.*)$': '<rootDir>/src/ext$1',

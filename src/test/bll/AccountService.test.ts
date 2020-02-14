@@ -1,6 +1,6 @@
 import { UserWechat, UserLogin } from './../../dal/db/entity/account';
 import { _mockInstance } from './../mock.ext';
-import { ServerException } from './../../exception/exception';
+import { ServerException } from '../../err/exception';
 import AccountService from "../../bll/AccountService";
 import { User } from "../../dal/db/entity/account";
 import { EntityManager } from 'typeorm';
