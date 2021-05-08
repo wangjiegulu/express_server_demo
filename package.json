@@ -56,7 +56,7 @@
     "routing-controllers": "^0.8.1-alpha.2",
     "type-graphql": "^0.17.6",
     "typedi": "^0.8.0",
-    "typeorm": "^0.2.22",
+    "typeorm": "^0.2.25",
     "typeorm-naming-strategies": "^1.1.0",
     "uuid": "^3.4.0"
   },
